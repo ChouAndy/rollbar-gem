@@ -44,8 +44,8 @@ module Rollbar
         :url => url,
         :user_ip => rollbar_user_ip(env),
         :headers => rollbar_headers(env),
-        :cookies => cookies,
-        :session => session,
+        :cookies => nil,
+        :session => nil,
         :method => rollbar_request_method(env),
         :route => route_params,
       }
